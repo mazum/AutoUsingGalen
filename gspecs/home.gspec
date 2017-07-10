@@ -1,0 +1,90 @@
+@objects
+	headerLogo			css		div.logo
+	titleText			css		h1.h2
+	usernameLabel		css		label[for='username']
+	usernameTextBox		css		#username
+	forgotUsername		css		#username + em.help.long
+	passwordLabel		css		label[for='password']
+	passwordTextBox		css		#password
+	forgotPassword		css		#password + em.help.long
+	registerButton		css		span.register
+	loginButton			css		input.fn_validate_submit
+	form				css		#loginForm
+	promoTile			css		div.promo-tile
+	container			css		div.l-content-column-container
+	
+= Header =
+	headerLogo:
+		inside viewport 0 px  left top
+		
+= Title =
+	titleText:
+		centered horizontally inside viewport
+		
+= Promo Tile =
+	promoTile:
+		@on desktop
+			right-of form 5 to 20 px
+			inside viewport 200 to 250 px top
+		@on mobile
+			below registerButton 80 to 90 px
+			aligned vertically all form
+		
+= Username =
+	usernameLabel:
+		inside form 15 to 25 px left top
+		above usernameTextBox 20 to 30 px
+		aligned vertically left usernameTextBox
+	usernameTextBox:
+		inside form
+		below usernameLabel 0 to 10 px
+		above forgotUsername 0 to 10 px
+		aligned vertically left forgotUsername
+		aligned vertically all passwordTextBox
+	forgotUsername:
+		inside form
+		below usernameTextBox 0 to 10 px
+		above passwordLabel 25 to 35 px
+		aligned vertically left passwordLabel
+
+= Password =
+	passwordLabel:
+		inside form
+		below forgotUsername 25 to 35 px
+		above passwordTextBox 0 to 10 px
+		aligned vertically left passwordTextBox
+	passwordTextBox:
+		inside form
+		below passwordLabel 0 to 10 px
+		above forgotPassword 0 to 10 px
+		aligned vertically left forgotPassword
+		aligned vertically all usernameTextBox
+	forgotPassword:
+		inside form
+		below passwordTextBox 0 to 10 px
+		above loginButton 65 to 75 px
+		aligned vertically left usernameLabel
+
+= Login Button =
+	loginButton:		
+		inside form
+		height 45 to 55 px
+		@on desktop
+			width 200 to 250 px
+			aligned vertically right form
+		@on mobile
+			width 400 to 450 px
+			aligned vertically all form
+
+= Registration Button =
+	registerButton:
+		@on desktop
+			aligned horizontally all loginButton
+			left-of loginButton 5 to 15 px
+		@on mobile
+			aligned vertically all loginButton
+			below loginButton 5 to 15 px
+		
+= Container =
+	container:
+		centered horizontally inside viewport

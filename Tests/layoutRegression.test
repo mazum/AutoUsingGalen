@@ -1,0 +1,21 @@
+@@ set environment https://mol-preprod.usmnpz.com.au/
+@@ set seleniumGrid selenium grid http://localhost:4444/wd/hub
+@@ table devices
+	| deviceName | size     | tags    |
+	| mobile     | 500x800  | mobile  |
+#	| desktop    | 1024x768 | desktop |
+
+#@@ parameterized using devices
+#Home page on ${deviceName}
+#	${environment} ${size}
+#		check gspecs\home.gspec --include "${tags}"
+
+#@@ parameterized using devices
+#Overview page on ${deviceName}
+#	${environment} ${size}
+#		run Scripts\loginToOverviewPage.js
+#		check gspecs\overview.gspec --include "${tags}"
+
+Homepage in Selenium Grid on mobile
+    selenium grid http://localhost:4444/wd/hub --page https://mol-preprod.usmnpz.com.au/ --size 640x480 
+        check gspecs\home.gspec

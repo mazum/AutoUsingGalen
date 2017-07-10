@@ -1,0 +1,9 @@
+@objects
+	pageTitle			css		div#main > div.l-content.l-v-margin > h1
+		
+= Page Title =
+	pageTitle:
+		@on desktop
+			inside viewport 15 px left, 100px top
+		@on mobile
+			inside viewport 15 px left, 70px top
