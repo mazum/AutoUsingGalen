@@ -4,6 +4,6 @@
 = Page Title =
 	pageTitle:
 		@on desktop
-			inside viewport 15 px left, 100px top
+			inside viewport 575 to 625 px left, 130 to 160px top
 		@on mobile
 			inside viewport 15 px left, 70px top

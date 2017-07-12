@@ -24,8 +24,8 @@
 = Promo Tile =
 	promoTile:
 		@on desktop
-			right-of form 5 to 20 px
-			inside viewport 200 to 250 px top
+			right-of form 20 to 50 px
+			inside viewport 200 to 300 px top
 		@on mobile
 			below registerButton 80 to 90 px
 			aligned vertically all form
@@ -33,7 +33,7 @@
 = Username =
 	usernameLabel:
 		inside form 15 to 25 px left top
-		above usernameTextBox 20 to 30 px
+		above usernameTextBox 5 to 30 px
 		aligned vertically left usernameTextBox
 	usernameTextBox:
 		inside form
